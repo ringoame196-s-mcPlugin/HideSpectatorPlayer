@@ -40,6 +40,7 @@ configure<BukkitPluginDescription> {
     apiVersion = "1." + pluginVersion.split(".")[1]
     author = "ringoame196_s_mcPlugin"
     website = "https://github.com/ringoame196-s-mcPlugin"
+    depend = mutableListOf("ProtocolLib")
 
     commands {
         register("hidespec") {
