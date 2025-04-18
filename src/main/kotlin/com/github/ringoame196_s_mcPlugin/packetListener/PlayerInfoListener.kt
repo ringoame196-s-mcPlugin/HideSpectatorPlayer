@@ -15,6 +15,8 @@ class PlayerInfoListener(plugin: Plugin) : PacketAdapter(plugin, ListenerPriorit
         val packet = e?.packet ?: return // パケット
         val sender = e.player // 送る相手
 
+        // ADD_PLAYERの場合は処理を止める
+        if (packet.handle.toString().contains("ADD_PLAYER")) return
         if (packet.playerInfoDataLists.size() < 1) return
         val playerInfoData = packet.playerInfoDataLists.read(1)
 
