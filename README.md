@@ -1,36 +1,27 @@
-# SpigotPluginTemplate
+# HideSpectatorPlayer
 
-## [KotlinSpigotPluginTemplate (クローン元)](https://github.com/sya-ri/KotlinSpigotPluginTemplate)
+## プラグイン説明
+スペクテイターモードのプレイヤーの情報のパケットを遮断することで、<br>
+他プレイヤーからスペクテイターなことを、わからないようにする
 
-## 使い方
+## プラグインダウンロード
+[ダウンロードリンク](https://github.com/ringoame196-s-mcPlugin/HideSpectatorPlayer/releases/latest)
 
-- `Use this template` を押して、GitHub 上にプロジェクトを作成する。
-- 作成したプロジェクトをクローンする。
--  Gradle の `setup` タスクを実行して、初期化する。
+## 前提プラグイン
+[ProtocolLib](https://github.com/dmulloy2/ProtocolLib)
 
-## 追加機能
-- `setup`タスクを実行時に、README.mdを変更
-- ビルド時にプラグインをコピー
-- [AutomaticCreatingPluginUpdate](https://github.com/Ringoame196/AutomaticCreatingPluginUpdate)に対応
-- buildAndLaunchServerの削除
+| コマンド名   |     説明      | 権限 |
+| --- | ----------- | ------- |
+|/hidespec on | スペクテイターの隠匿モードを有効 | op |
+|/hidespec off | スペクテイターの隠匿モードを無効 | op |
 
-## plugin.yml
 
-ビルド時に自動生成されます。[build.gradle.kts](build.gradle.kts) の以下の箇所で設定できます。
-書き方は https://github.com/Minecrell/plugin-yml の Bukkit kotlin-dsl を見てください。
+## 開発環境
+- Minecraft Version : 1.20.1
+- Kotlin Version : 1.8.0
+- ProtocolLib：4.8.0
 
-```kotlin
-configure<BukkitPluginDescription> {
-    // 内容
-}
-```
-
-## タスク
-
-### プラグインのビルド `build`
-
-`build/libs` フォルダに `.jar` を生成します。
-
-### テストサーバーの起動 `buildAndLaunchServer`
-
-`:25565` でテストサーバーを起動します。
+## プロジェクト情報
+- プロジェクトパス : ringoame196-s-mcPlugin/HideSpectatorPlayer.git
+- 開発者名 : ringoame196-s-mcPlugin
+- 開発開始日 : 2025-04-19
