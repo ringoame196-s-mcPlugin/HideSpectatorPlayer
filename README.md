@@ -1,5 +1,9 @@
 # HideSpectatorPlayer
 
+
+https://github.com/user-attachments/assets/00832699-c1c0-4130-9582-82a659d25aae
+
+
 ## プラグイン説明
 スペクテイターモードのプレイヤーの情報のパケットを遮断することで、<br>
 他プレイヤーからスペクテイターなことを、わからないようにする
